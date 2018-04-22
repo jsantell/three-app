@@ -1,0 +1,25 @@
+{
+  "name": "@jsantell/three-app",
+  "version": "1.0.0",
+  "description": "Generalized app structure for THREE",
+  "main": "./dist/three-app.js",
+  "module": "./dist/three-app.module.js",
+  "scripts": {
+    "build": "rollup -c",
+    "version": "npm run build && git add dist/*",
+    "postversion": "git push && git push --tags && npm publish"
+  },
+  "author": "Jordan Santell <jordan@jsantell.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^0.58.1"
+  },
+  "keywords": [
+    "three",
+    "three.js"
+  ],
+  "peerDependencies": {
+    "three": "*"
+  },
+  "repository": "https://github.com/jsantell/three-app"
+}
